@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knowpradip.hwg.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:paddingEnd="@dimen/abc_action_bar_content_inset_material">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Generate "
+        android:id="@+id/generateButton"
+        android:textAlignment="center"
+        android:background="#9d9f5d3b"
+        android:ellipsize="none"
+        android:textSize="@dimen/abc_select_dialog_padding_start_material"
+        android:theme="@style/AppTheme"
+        android:elegantTextHeight="false"
+        android:longClickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+        android:layout_marginRight="@dimen/abc_action_bar_progress_bar_size"
+        android:layout_marginBottom="@dimen/abc_floating_window_z"
+        android:enabled="true"
+        android:contextClickable="false"
+        android:clickable="true"
+        android:textColor="#6c6464" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/generatedText"
+        android:text="Touch the &quot;GENERATE&quot; button to start!"
+        android:textSize="@dimen/abc_text_size_button_material"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/generateButton" />
+
+</RelativeLayout>
